@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/actionBarTop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3F51B5">
+
+        <Button
+            android:id="@+id/menuBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_menu_black_24dp">
+
+        </Button>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/menuBtn"
+            android:layout_toEndOf="@id/menuBtn"
+            android:layout_toLeftOf="@id/refreshBtn"
+            android:layout_toStartOf="@id/refreshBtn"
+            android:src="@drawable/splashscreen"
+            android:scaleType="fitXY"
+            >
+
+        </ImageView>
+        <Button
+            android:id="@+id/refreshBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/home_btn">
+
+        </Button>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:background="#ffffff"
+        android:layout_below="@+id/actionBarTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>
